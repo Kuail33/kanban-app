@@ -1,41 +1,99 @@
-<<<<<<< HEAD
-# kanban-app
-A simple Kanban application using Figma for styling, React and Typescript for front-end development.
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+***Kanban Board***
 
-## Getting Started
+A modern, interactive Kanban board built with Next.js, React, and dnd-kit for smooth drag-and-drop task management.
+Styled using Figma-inspired designs and Tailwind CSS for a clean, responsive UI.
 
-First, run the development server:
+**🚀 Features**
+✨ Drag-and-Drop: Seamlessly move tasks between columns using dnd-kit
+📝 Add Tasks: Create new tasks in the To-do column with an intuitive input interface
+❌ Delete Tasks: Remove tasks from any column with a single click
+🎨 Responsive Design: Clean, modern styling powered by Tailwind CSS
+🖼️ Custom Button Icons: Designed add button with hover & active states
+👁️ Drag Preview: Live preview while dragging tasks across columns
+♿ Accessible: Keyboard navigation + ARIA labels for improved accessibility
 
-```bash
+**🧰 Tech Stack**
+Framework: Next.js 15 (React 19)
+Styling: Tailwind CSS
+Drag & Drop: @dnd-kit/core
+Language: TypeScript
+State Management: React Context API + Hooks
+Design: Figma
+
+📁 Project Structure
+src/
+  components/
+  context/
+  styles/
+  app/
+  ...
+
+**🛠️ Getting Started**
+Prerequisites
+Node.js 18+
+npm or yarn
+Installation
+
+Clone the repository:
+git clone <repo-url>
+cd <project-name>
+
+
+Install dependencies:
+npm install
+# or
+yarn install
+
+
+Run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser at http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**🧱 Architecture**
+Board State Management
+Handled by the BoardProvider (React Context API):
+tasks: Array of tasks (id, title, status)
+moveTask: Move a task to a different column
+addTask: Create a new task
+deleteTask: Remove a task
+Drag & Drop Flow
+Board.tsx wraps the page with DndContext
+Column.tsx uses useDroppable for drop zones
+Task.tsx uses useDraggable for draggable task cards
+PreviewDrag.tsx renders drag preview in DragOverlay
+handleDragEnd updates task status after drop
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**🎨 Customization**
+Styling
+Replace button icons in /public:
+button.png, button-hover.png, button-press.png
+Update Tailwind classes in component files
+Global styles → globals.css
+Column sizing → edit classNames in Column.tsx
+Column Names
+Edit titles & statuses in Board.tsx.
 
-## Learn More
+**📜 Available Scripts**
+Standard Next.js scripts:
+npm run dev — start dev server
+npm run build — build for production
+npm start — run production server
 
-To learn more about Next.js, take a look at the following resources:
+**🌐 Browser Support**
+Compatible with modern browsers supporting:
+ES2020 JavaScript
+CSS Grid & Flexbox
+Pointer Events API
+🔮 Future Enhancements
+💾 Task persistence (local storage or DB)
+🔄 Undo/redo actions
+🏷️ Task tags & categories
+⏰ Due dates & reminders
+👤 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Made by Kuail33 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> c11e5cd (Initial commit from Create Next App)
+Built with ❤️ using Next.js and dnd-kit.

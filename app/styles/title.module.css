@@ -1,0 +1,23 @@
+.title-box {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    position: relative; left: 110px
+    }
+
+.title-box {
+    -webkit-text-stroke: 5px rgba(243, 239, 230, 1);
+    transform: rotate(2.594deg);
+    line-height: 128.006%; /* 115.206px */
+    letter-spacing: 4px;
+    display: flex;
+}
+
+.title-box:hover{
+    transform: translate(0px, -10px);
+    animation: 0.5s
+}
+

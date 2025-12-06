@@ -1,0 +1,61 @@
+.todo {
+    color: rgba(243, 239, 230, 1);
+    font-family: Silkscreen;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    white-space: nowrap;        /* keep on one line */        
+    display: inline-block;
+    max-width: 100%;
+    transform: rotate(-4deg);
+    align-self: center;
+    margin-bottom: 4px;
+    margin-right: 5px
+}
+
+.todo:hover{
+    transform: translate(0px, -10px);
+    animation: 0.5s
+}
+
+.inProgress {
+    color: rgba(243, 239, 230, 1);
+    font-family: Silkscreen;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    white-space: nowrap;        /* keep on one line */        
+    display: inline-block;
+    max-width: 100%;
+    transform: rotate(-4deg);
+    align-self: center;
+    margin-bottom: 4px;
+    margin-right: 5px
+}
+
+.inProgress:hover{
+    transform: translate(0px, -10px);
+    animation: 0.5s
+}
+
+.done {
+    color: rgba(243, 239, 230, 1);
+    font-family: Silkscreen;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    white-space: nowrap;        /* keep on one line */        
+    display: inline-block;
+    max-width: 100%;
+    transform: rotate(-4deg);
+    align-self: center;
+    margin-bottom: 4px
+}
+
+.done:hover{
+    transform: translate(0px, -10px);
+    animation: 0.5s
+}

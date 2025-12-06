@@ -1,0 +1,23 @@
+
+.button {
+    width: 70px; height: 70px;
+    background-image: url('/button.png');     
+    background-size: contain;   
+    background-repeat: no-repeat;
+    transform: translate(10px)
+}
+
+.button:active {
+    width: 70px; height: 70px;
+    background-image: url('/button-hover.png');
+    background-size: contain;   
+    background-repeat: no-repeat
+}
+
+.button:hover {
+    width: 70px; height: 70px;
+    background-image: url('/button-press.png');
+    background-size: contain;   
+    background-repeat: no-repeat;
+
+}

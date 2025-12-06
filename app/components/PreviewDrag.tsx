@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { BoardContext } from "./BoardProvider";
+import type { TaskType } from "./Types";
 
 export default function PreviewDrag ({taskID} : { taskID : number }) {
     const context = useContext(BoardContext)
@@ -7,7 +8,7 @@ export default function PreviewDrag ({taskID} : { taskID : number }) {
     
     const { tasks } = context
 
-    const task = tasks.find(function(task) {return task.id === taskID })
+    const task = tasks.find(function(task : TaskType) {return task.id === taskID })
     if (!task) return null;
 
     return (
